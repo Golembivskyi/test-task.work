@@ -1,0 +1,111 @@
+@import _variables
+
+*
+	font-family: Roboto, Arial
+	padding: 0
+	margin: 0
+
+.slide1
+	background: url(../img/bg1.jpg) center top
+	background-size: contain
+	background-repeat: no-repeat
+
+.test-block
+	margin: 0 auto
+	max-width: 1200px
+	height: 650px // delete in the future
+.top
+	display: flex
+	align-items: flex-end
+	justify-content: space-between
+	padding: 50px 80px 10px 80px
+
+.logo
+	text-decoration: none
+	font-family: Roboto Bold Condensed, Arial
+	text-transform: uppercase
+	font-size: 50px
+	color: $white
+
+.top-menu
+	list-style: none
+	display: flex
+	margin-right: 40px
+	li
+		padding-bottom: 20px
+
+.top-menu-item
+	margin: 5px 22px
+	font-size: 11px
+	font-family: Roboto Light, Arial
+	text-decoration: none
+	color: $white
+.lang-switcher
+	text-decoration: none
+	color: $white
+	font-size: 12px
+	border: 1px $white solid
+	padding: 3px 8px
+	padding-right: 18px
+	position: relative
+	margin-left: 30px
+.lang-switcher::before
+	content: ""
+	height: 2px
+	width: 6px
+	background-color: $white
+	position: absolute
+	right: 4px
+	top: 9px
+	transform: rotate(-45deg)
+.lang-switcher::after
+	content: ""
+	height: 2px
+	width: 6px
+	background-color: $white
+	position: absolute
+	transform: rotate(45deg)
+	top: 9px
+	right: 7px
+
+nav
+	background-color: $white
+	margin-left: 80px
+	margin-right: 120px
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.41)
+	ul
+		padding-inline-start: 0
+		display: flex
+.nav-item, .nav-item-last
+	list-style: none
+	text-transform: uppercase
+	color: $dark-grey
+	margin: 15px auto
+	font-size: 12px
+	font-weight: 500
+
+.nav-item::after
+	content: ''
+	display: inline-block
+	width: 0
+	height: 0
+	margin-left: 5px
+	margin-bottom: 1.5px
+	border-style: solid
+	border-width: 3px 0 3px 3px
+	border-color: transparent transparent transparent $dark-grey
+
+.nav-item-last
+	margin: 0
+	padding: 10px 30px
+	color: $white
+	background: rgb(117,91,30)
+	background: linear-gradient(0deg, rgba(117,91,30,1) 0%, rgba(82,168,40,1) 100%)
+	display: flex
+	align-items: center
+	margin-right: -1px
+
+.basket
+	padding-right: 6px
+	width: 18px
+	height: 18px

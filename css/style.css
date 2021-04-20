@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-family: "Roboto Thin";
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-family: "Roboto Light";
+  src: url(../fonts/Roboto-Light.ttf);
+  font-family: "Roboto Bold Condensed";
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+* {
+  font-family: Roboto, Arial;
+  padding: 0;
+  margin: 0;
+}
+
+.slide1 {
+  background: url(../img/bg1.jpg) center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.test-block {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 650px;
+}
+
+.top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 50px 80px 10px 80px;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: Roboto Bold Condensed, Arial;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.top-menu {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+}
+
+.top-menu li {
+  padding-bottom: 20px;
+}
+
+.top-menu-item {
+  margin: 5px 22px;
+  font-size: 11px;
+  font-family: Roboto Light, Arial;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.lang-switcher {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  border: 1px #ffffff solid;
+  padding: 3px 8px;
+  padding-right: 18px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.lang-switcher::before {
+  content: "";
+  height: 2px;
+  width: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 4px;
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.lang-switcher::after {
+  content: "";
+  height: 2px;
+  width: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 9px;
+  right: 7px;
+}
+
+nav {
+  background-color: #ffffff;
+  margin-left: 80px;
+  margin-right: 120px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.41);
+}
+
+nav ul {
+  padding-inline-start: 0;
+  display: flex;
+}
+
+.nav-item, .nav-item-last {
+  list-style: none;
+  text-transform: uppercase;
+  color: #6d6e71;
+  margin: 15px auto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nav-item::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  margin-bottom: 1.5px;
+  border-style: solid;
+  border-width: 3px 0 3px 3px;
+  border-color: transparent transparent transparent #6d6e71;
+}
+
+.nav-item-last {
+  margin: 0;
+  padding: 10px 30px;
+  color: #ffffff;
+  background: #755b1e;
+  background: linear-gradient(0deg, #755b1e 0%, #52a828 100%);
+  display: flex;
+  align-items: center;
+  margin-right: -1px;
+}
+
+.basket {
+  padding-right: 6px;
+  width: 18px;
+  height: 18px;
+}
