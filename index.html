@@ -12,6 +12,7 @@
 <body>
 
 	<div class="slide1">
+		<div class="slide1-bg"></div>
 		<div class="test-block">
 			<header>
 				<div class="top">
@@ -39,13 +40,109 @@
 						</li>
 					</ul>
 				</nav>
-
+				<div>
+					<h1>
+						<span class="h1">ОРГАНИЧЕСКОЕ</span><br>
+						<span class="h1 second-line">НАНО-УДОБНИЕ</span><br>
+						<span class="h1 third-line">ДОБРИВО</span>
+					</h1>
+				</div>
 			</header>
 
 		</div>
 	</div>
 
+	<div class="slide2">
+		<div class="cell-1">
+			<div class="slide2-top">
+				<div class="top-left">
+					<img src="img/product.png" alt="Agricultural Product" class="product">
+				</div>
+				<div class="top-right">
+					<div class="statement">
+						<img src="svg/star.svg" alt="Star icon svg" class="star-icon">
+						<div class="text-block">
+							<div class="header">ПРИРОСТ УРОЖАЯ</div>
+							<div class="text">в сравнении с химическим удобрением</div>
+							<div class="percentage">30%-250%</div>
+						</div>
+					</div>
+					<div class="statement">
+						<img src="svg/star.svg" alt="Star icon svg" class="star-icon">
+						<div class="text-block">
+							<div class="header">ЭКОНОМИЯ</div>
+							<div class="text">химических удобрений в хозяйстве</div>
+							<div class="percentage">до 70%</div>
+						</div>
+					</div>
+					<div class="statement">
+						<img src="svg/star.svg" alt="Star icon svg" class="star-icon">
+						<div class="text-block">
+							<div class="header">РОСТ КОРНЕВОЙ</div>
+							<div class="text">системы растений при использовании</div>
+							<div class="percentage">в 3-10раз</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide2-bottom">
+				<div class="btm-left">Хотитите трали-вали ла-лала?</div>
+				<div class="btm-right">УЗНАЙТЕ О НАГРО БОЛЬШЕ!</div>
+			</div>
+			<div class="row3">
+				<a href="#" class="know-more">
+					<div class="btn">УЗНАТЬ БОЛЬШЕ</div>
+				</a>
+			</div>
+		</div>
+		<div class="cell-2">
+			<div class="form-cell">
+				<div class="form-bg1">
+					<div class="form-bg2">
+						<h2 class="form-title">посчитайте прибыль</h2>
+						<div class="form-subtitle"><strong>ДОБРИВО</strong> ЭФФЕКТИВНЕЕ ХИМИИ</div>
+						<hr class="hr">
+						<form action="">
+							<label for="">Выберите культуру</label>
+							<select id="culture" placeholder="Вкажіть урожайність"><br>
+								<option value="3100">Пшеница ≈ 3100 грн / т</option>
+								<option value="2800">Ячмень ≈ 2800 грн / т</option>
+							</select><br>
+							<label for="">Урожайность, ц/га</label>
+							<input type="text" id="capacity" placeholder="Вкажіть урожайність"><br>
+							<label for="">Стоимость хим. удобрения, грн/га</label>
+							<input type="text" id="price" placeholder="Вкажіть вартість добрива"><br>
+							<label for="">Посевная площадь, га</label>
+							<input type="text" id="area" placeholder="Введите посевную площадь">
+							<hr class="hr">
+							<div class="result-header">Прибыль от ДОБРИВА</div>
+							<div id="result">заполните форму</div>
+							<div class="currency">грн.</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<script>
+
+		function inputHandler() {
+
+			var culture = document.getElementById("culture").value;
+			var capacity = document.getElementById("capacity").value;
+			var price = document.getElementById("price").value;
+			var area = document.getElementById("area").value;
+
+			document.getElementById("result").innerHTML = price * area * capacity * culture;
+		}
+
+		document.getElementById("price").addEventListener("input", inputHandler);
+		document.getElementById("area").addEventListener("input", inputHandler);
+		document.getElementById("capacity").addEventListener("input", inputHandler);
+		document.getElementById("culture").addEventListener("input", inputHandler);
+
+	</script>
 
 </body>
 

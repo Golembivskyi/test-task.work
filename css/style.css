@@ -15,16 +15,33 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .slide1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 418px;
+}
+
+.slide1-bg {
   background: url(../img/bg1.jpg) center top;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+  height: 450px;
+  margin-top: -32px;
 }
 
 .test-block {
+  position: absolute;
   margin: 0 auto;
+  width: 100%;
   max-width: 1200px;
-  height: 650px;
 }
 
 .top {
@@ -66,7 +83,7 @@
   font-size: 12px;
   border: 1px #ffffff solid;
   padding: 3px 8px;
-  padding-right: 18px;
+  padding-right: 20px;
   position: relative;
   margin-left: 30px;
 }
@@ -77,7 +94,7 @@
   width: 6px;
   background-color: #ffffff;
   position: absolute;
-  right: 4px;
+  right: 7px;
   top: 9px;
   transform: rotate(-45deg);
 }
@@ -90,7 +107,7 @@
   position: absolute;
   transform: rotate(45deg);
   top: 9px;
-  right: 7px;
+  right: 10px;
 }
 
 nav {
@@ -141,4 +158,210 @@ nav ul {
   padding-right: 6px;
   width: 18px;
   height: 18px;
+}
+
+div h1 {
+  padding-top: 70px;
+}
+
+.h1 {
+  color: #ffffff;
+  font-size: 56px;
+  font-family: Roboto;
+  line-height: 0.9;
+  font-weight: 500;
+  padding-left: 180px;
+  box-sizing: border-box;
+}
+
+.second-line {
+  padding-left: 270px;
+}
+
+.third-line {
+  padding-left: 350px;
+}
+
+.slide2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slide2-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-right {
+  margin-right: 70px;
+  margin-top: 12px;
+}
+
+.statement {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cell-1 {
+  background-color: #ffffff;
+  width: 55%;
+  min-width: 500px;
+}
+
+.product {
+  width: 190px;
+  height: 345px;
+  margin-right: 20px;
+  margin-top: -60px;
+  z-index: 2;
+  position: relative;
+}
+
+.star-icon {
+  width: 33px;
+  height: 32px;
+  margin-right: 25px;
+}
+
+.header {
+  font-size: 25px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  color: #4d4545;
+}
+
+.text {
+  font-size: 11px;
+  font-family: Roboto, Arial;
+  color: #a7a9ac;
+  margin-bottom: 3px;
+}
+
+.percentage {
+  font-size: 25px;
+  color: #c49a6c;
+  font-family: Roboto, Arial;
+}
+
+.slide2-bottom {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 34px;
+}
+
+.btm-left {
+  margin-right: 20px;
+  margin-top: 3px;
+  width: 100px;
+  text-align: right;
+  font-family: Roboto Light;
+  font-size: 16px;
+}
+
+.btm-right {
+  width: 350px;
+  font-size: 42px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #25383f;
+}
+
+.row3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.know-more:link {
+  margin-right: 147px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.know-more:visited {
+  color: #000;
+}
+
+.know-more:hover {
+  color: #ffffff;
+}
+
+.btn {
+  border: solid 5px #000;
+  width: fit-content;
+  padding: 15px 30px;
+}
+
+.btn:hover {
+  background-color: #c49a6c;
+  transition: .3s;
+}
+
+.cell-2 {
+  width: 45%;
+  min-width: 500px;
+}
+
+.form-cell {
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-bg1 {
+  width: 320px;
+  height: fit-content;
+  background-color: #e9e5e4;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: -180px;
+  z-index: 1;
+}
+
+.form-bg2 {
+  padding: 22px;
+  box-sizing: border-box;
+  background-color: #F4F3F1;
+  border: 1px dashed #a7a9ac;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #25383f;
+  font-family: Roboto Light, Arial;
+}
+
+.form-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  font-size: 14px;
+}
+
+.hr {
+  width: 170px;
+  margin: 18px auto;
+  color: #d1d3d4;
+}
+
+form label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+form input, form select {
+  width: 100%;
+  margin-bottom: 15px;
 }
